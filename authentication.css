@@ -1,0 +1,166 @@
+/* SignIn & SignUp Page*/
+
+
+:root{
+    --primary-color: #5433FF;
+    --secondary-color: #20BDFF;
+    --tirtiary-color: #A5FECB;
+}
+
+.containers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .sign-container{
+    display: flex;
+    flex-direction: row;
+    width: 950px;
+    height: 540px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 25px 10px #3f3f3f4e;
+  }
+  
+  .left-col, .right-col{
+    display: flex;
+    width: 50%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 80px;
+  }
+  
+  .left-col{
+    background-image: linear-gradient(90deg, #5533ffdb, #20bcffd7, #a5feccd3), url(Images/sign-bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    color: #000000;
+  }
+  
+  .sign-input{
+    width: 100%;
+    padding: 10px;
+    background-color: #e6e6e6;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    margin: 5px;
+  }
+  
+  form input[type="checkbox"]{
+    accent-color: var(--primary-color);
+  }
+  
+  .sign-input:hover{
+    outline: 1px solid #333333;
+  }
+  
+  .remember-password{
+    text-align: left;
+    margin: 5px 0px 0px 5px;
+  }
+  
+  .remember-password label{
+    color: #333333;
+  }
+  
+  .right-col form a{
+    text-decoration: none;
+    color: #333333;
+  }
+  
+  .right-col form a p{
+    margin-top: 15px;
+  }
+  
+  .right-col form a p:hover{
+    color: var(--primary-color);
+  }
+  
+  .sign-btn{
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    box-shadow: 10px 10px 25px 10px #3f3f3f3c;
+    outline: none;
+    border-radius: 10px;
+    padding: 12px;
+    width: 100%;
+    margin: 5px;
+    transition: 0.2s ease;
+  }
+  
+  .sign-btn:hover{
+    transform: scale(1.04);
+  }
+  
+  @media (max-width:950px){
+    .containers{
+      height: auto;
+    }
+    .sign-container{
+      margin: 20px 15px;
+      width: 100%;
+    }
+    .left-col, .right-col{
+      padding: 40px;
+    }
+  }
+  
+  @media (max-width:715px) {
+    .sign-container{
+      flex-direction: column;
+      height: auto;
+      width: 100%;
+    }
+    .left-col, .right-col{
+      display: flex;
+      width: 100%;
+      height: auto;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px;
+    }
+  }
+  
+  .sign-icon-flex{
+    display: flex;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 10px;
+  }
+  
+  .sign-icon-flex div h6{
+    font-size: 0.9rem;
+    margin-top: -7px;
+  }
+  
+  .sign-icon{
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: 0.2s ease;
+  }  
+  
+  .sign-icon:hover{
+    color: var(--primary-color);
+    transform: scale(1.05);
+  }
+  
+  .messages-box{
+    display: flex;
+    width: 100%;
+    background-color: #ff7575;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 10px 10px 25px 10px #3f3f3f3c;
+  }
